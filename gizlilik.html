@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası - Birikim Takip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><a href="index.html" style="color: inherit;">Birikim Takip</a></div>
+            <nav>
+                <a href="index.html">Ana Sayfa</a>
+            </nav>
+        </header>
+
+        <section class="page-content">
+            <h1>Gizlilik Politikası</h1>
+            <p>Son güncellenme tarihi: 3 Ekim 2026</p>
+
+            <p>Bilal Nişancı ("Biz", "Geliştirici"), "Birikim: Altın, Döviz, Portföy" ("Uygulama") mobil uygulamasının geliştiricisidir. Bu Gizlilik Politikası, Uygulamamızı kullandığınızda verilerinizin nasıl işlendiğini ve korunduğunu açıklamaktadır.</p>
+
+            <h2>1. Veri Toplama ve Çevrimdışı Kullanım</h2>
+            <p>Uygulamamız öncelikli olarak çevrimdışı (offline-first) bir mimari ile çalışır. Girdiğiniz varlıklar, hesap bilgileri, alım/satım işlemleri ve diğer finansal veriler <strong>sadece cihazınızın dahili hafızasında (yerel veritabanı)</strong> saklanır. Bu veriler hiçbir şekilde uzak sunucularımıza iletilmez, toplanmaz veya satılmaz.</p>
+
+            <h2>2. Google Drive Entegrasyonu (OAuth 2.0 ve AppData İzni)</h2>
+            <p>Uygulama, veri kaybını önlemek amacıyla <strong>isteğe bağlı</strong> olarak "Google Drive ile Yedekleme" özelliği sunmaktadır. Bu özelliği kullandığınızda:</p>
+            <ul>
+                <li>Uygulama, Google hesabınıza güvenli bir şekilde bağlanmak için Google Sign-In kullanır.</li>
+                <li>Uygulama, Google Drive API'si üzerinden sadece <strong>`https://www.googleapis.com/auth/drive.appdata`</strong> (Uygulama Verileri Klasörü) izni talep eder.</li>
+                <li>Bu izin, Uygulamanın <strong>sadece kendi oluşturduğu yedek dosyalarını</strong> Drive'ınıza (App Data Folder) yüklemesini, okumasını ve geri yüklemesini sağlar.</li>
+                <li><strong>ÖNEMLİ:</strong> Uygulama, Google Drive'ınızdaki fotoğraflarınıza, belgelerinize veya uygulama dışı hiçbir kişisel dosyanıza <strong>erişemez ve bunları göremez.</strong></li>
+            </ul>
+
+            <h2>3. Üçüncü Taraf API Kullanımları</h2>
+            <p>Uygulama, döviz ve altın kurlarını güncel olarak gösterebilmek için dış kaynaklı finansal API'lere (ör. TCMB, Truncgil) bağlanır. Bu bağlantılar sırasında sadece kur verisi çekilir, sizin hakkınızda hiçbir kişisel tanımlayıcı bilgi (PII) veya portföy verisi bu servislere gönderilmez.</p>
+
+            <h2>4. Veri Paylaşımı</h2>
+            <p>Kişisel verileriniz ve finansal kayıtlarınız kesinlikle 3. şahıs şirketler, reklam ağları veya analiz firmaları ile paylaşılmaz.</p>
+
+            <h2>5. Veri Güvenliği</h2>
+            <p>Verilerinizin güvenliğini önemsiyoruz. Veritabanınız sadece sizin cihazınızın güvenli depolama (sandbox) alanında bulunur. Drive yedekleriniz de Google'ın yüksek güvenlikli altyapısında sadece sizin hesabınızın erişebileceği (appDataFolder) kapalı bir klasörde muhafaza edilir.</p>
+
+            <h2>6. İletişim</h2>
+            <p>Bu Gizlilik Politikası hakkında sorularınız veya endişeleriniz varsa, lütfen bizimle iletişime geçin:<br>
+            <strong>E-posta:</strong> bilalnisanci@gmail.com (Örnek e-posta adresinizi kullanın)</p>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="gizlilik.html">Gizlilik Politikası</a>
+                <a href="sartlar.html">Kullanım Şartları</a>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; 2026 Bilal Nişancı. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>
